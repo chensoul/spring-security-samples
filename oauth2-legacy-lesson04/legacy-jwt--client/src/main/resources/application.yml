@@ -1,0 +1,29 @@
+server:
+  port: 8082
+  servlet:
+    context-path: /client
+
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          custom:
+            client-id: client
+            client-secret: secret
+            scope: read,write
+            authorization-grant-type: authorization_code
+            redirect-uri: http://localhost:8082/lsso-client/login/oauth2/code/custom
+        provider:
+          custom:
+            authorization-uri: http://localhost:8083/oauth/authorize
+            token-uri: http://localhost:8083/oauth/token
+            user-info-uri: http://localhost:8083/users/userinfo
+            user-name-attribute: preferred_username
+  thymeleaf:
+    cache: false
+
+resourceserver:
+  api:
+    project:
+      url: http://localhost:8081/resource/api/projects
