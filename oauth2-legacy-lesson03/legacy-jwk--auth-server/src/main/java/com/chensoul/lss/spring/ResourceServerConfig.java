@@ -4,8 +4,9 @@ import com.nimbusds.jose.JWSAlgorithm;
 import com.nimbusds.jose.jwk.JWKSet;
 import com.nimbusds.jose.jwk.KeyUse;
 import com.nimbusds.jose.jwk.RSAKey;
-import org.apache.commons.lang3.RandomStringUtils;
-import org.apache.commons.lang3.StringUtils;
+import java.security.KeyPair;
+import java.security.interfaces.RSAPublicKey;
+import java.util.Collections;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.security.oauth2.authserver.AuthorizationServerProperties;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
@@ -15,21 +16,18 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.Resource;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.http.SessionCreationPolicy;
+import org.springframework.security.oauth2.common.util.RandomValueStringGenerator;
 import org.springframework.security.oauth2.config.annotation.web.configuration.EnableResourceServer;
 import org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfigurerAdapter;
 import org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter;
 import org.springframework.security.oauth2.provider.token.store.KeyStoreKeyFactory;
-
-import java.security.KeyPair;
-import java.security.interfaces.RSAPublicKey;
-import java.util.Collections;
-import java.util.Map;
+import org.springframework.util.StringUtils;
 
 @Configuration
 @EnableResourceServer
 @EnableConfigurationProperties(AuthorizationServerProperties.class)
 public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
-	private static final String JWK_KID = RandomStringUtils.randomAlphanumeric(6);
+	private static final String JWK_KID = new RandomValueStringGenerator().generate();
 
 	@Autowired
 	private AuthorizationServerProperties properties;
@@ -54,7 +52,7 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
 		Resource keyStore = this.context.getResource(properties.getJwt().getKeyStore());
 		KeyStoreKeyFactory ksFactory = new KeyStoreKeyFactory(keyStore, properties.getJwt().getKeyStorePassword().toCharArray());
 
-		if (StringUtils.isNotBlank(properties.getJwt().getKeyPassword())) {
+		if (!StringUtils.isEmpty(properties.getJwt().getKeyPassword())) {
 			return ksFactory.getKeyPair(properties.getJwt().getKeyAlias(), properties.getJwt().getKeyPassword().toCharArray());
 		}
 		return ksFactory.getKeyPair(properties.getJwt().getKeyAlias());
@@ -69,8 +67,7 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
 
 	@Bean
 	public JwtAccessTokenConverter jwtAccessTokenConverter() {
-		Map<String, String> customHeaders = Collections.singletonMap("kid", JWK_KID);
-		return new JwkKeyPairAccessTokenConverter(customHeaders, keyPair());
+		return new JwkKeyPairAccessTokenConverter(keyPair(), Collections.singletonMap("kid", JWK_KID));
 	}
 
 }

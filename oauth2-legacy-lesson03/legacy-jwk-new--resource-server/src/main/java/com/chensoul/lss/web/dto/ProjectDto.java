@@ -1,13 +1,19 @@
 package com.chensoul.lss.web.dto;
 
 import java.time.LocalDate;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.RequiredArgsConstructor;
 
-public record ProjectDto(
+@Data
+@AllArgsConstructor
+@RequiredArgsConstructor
+public class ProjectDto {
+	Long id;
 
-    Long id,
+	String name;
 
-    String name,
+	LocalDate dateCreated;
 
-    LocalDate dateCreated) {
 
 }

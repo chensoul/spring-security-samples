@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class LegacyJwkNewResourceServerApp {
+public class LegacyJwkResourceServerApplication {
 
     public static void main(String[] args) throws Exception {
-        SpringApplication.run(LegacyJwkNewResourceServerApp.class, args);
+        SpringApplication.run(LegacyJwkResourceServerApplication.class, args);
     }
 
 }

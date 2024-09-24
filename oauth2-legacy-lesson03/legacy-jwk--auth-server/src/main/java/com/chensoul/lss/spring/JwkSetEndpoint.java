@@ -16,7 +16,7 @@ public class JwkSetEndpoint {
 
 	@GetMapping("/endpoint/jwks.json")
 	@ResponseBody
-	public Map<String, Object> getKey() {
+	public Map<String, Object> jwks() {
 		return this.jwkSet.toJSONObject();
 	}
 }

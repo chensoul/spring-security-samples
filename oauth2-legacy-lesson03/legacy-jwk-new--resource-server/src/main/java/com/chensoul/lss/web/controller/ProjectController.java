@@ -24,51 +24,51 @@ import com.chensoul.lss.web.dto.ProjectDto;
 @RequestMapping(value = "/api/projects")
 public class ProjectController {
 
-    private IProjectService projectService;
+	private IProjectService projectService;
 
-    public ProjectController(IProjectService projectService) {
-        this.projectService = projectService;
-    }
+	public ProjectController(IProjectService projectService) {
+		this.projectService = projectService;
+	}
 
-    @GetMapping(value = "/{id}")
-    public ProjectDto findOne(@PathVariable Long id) {
-        Project entity = projectService.findById(id)
-            .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
-        return convertToDto(entity);
-    }
+	@GetMapping(value = "/{id}")
+	public ProjectDto findOne(@PathVariable Long id) {
+		Project entity = projectService.findById(id)
+			.orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
+		return convertToDto(entity);
+	}
 
-    @ResponseStatus(HttpStatus.CREATED)
-    @PostMapping
-    public void create(@RequestBody ProjectDto newProject) {
-        Project entity = convertToEntity(newProject);
-        this.projectService.save(entity);
-    }
+	@ResponseStatus(HttpStatus.CREATED)
+	@PostMapping
+	public void create(@RequestBody ProjectDto newProject) {
+		Project entity = convertToEntity(newProject);
+		this.projectService.save(entity);
+	}
 
-    @GetMapping
-    public Collection<ProjectDto> findAll() {
-        Iterable<Project> projects = this.projectService.findAll();
-        List<ProjectDto> projectDtos = new ArrayList<>();
-        projects.forEach(p -> projectDtos.add(convertToDto(p)));
-        return projectDtos;
-    }
+	@GetMapping
+	public Collection<ProjectDto> findAll() {
+		Iterable<Project> projects = this.projectService.findAll();
+		List<ProjectDto> projectDtos = new ArrayList<>();
+		projects.forEach(p -> projectDtos.add(convertToDto(p)));
+		return projectDtos;
+	}
 
-    @PutMapping("/{id}")
-    public ProjectDto updateProject(@PathVariable("id") Long id, @RequestBody ProjectDto updatedProject) {
-        Project projectEntity = convertToEntity(updatedProject);
-        return this.convertToDto(this.projectService.save(projectEntity));
-    }
+	@PutMapping("/{id}")
+	public ProjectDto updateProject(@PathVariable("id") Long id, @RequestBody ProjectDto updatedProject) {
+		Project projectEntity = convertToEntity(updatedProject);
+		return this.convertToDto(this.projectService.save(projectEntity));
+	}
 
-    protected ProjectDto convertToDto(Project entity) {
-        ProjectDto dto = new ProjectDto(entity.getId(), entity.getName(), entity.getDateCreated());
+	protected ProjectDto convertToDto(Project entity) {
+		ProjectDto dto = new ProjectDto(entity.getId(), entity.getName(), entity.getDateCreated());
 
-        return dto;
-    }
+		return dto;
+	}
 
-    protected Project convertToEntity(ProjectDto dto) {
-        Project project = new Project(dto.name(), dto.dateCreated());
-        if (!Objects.isNull(dto.id())) {
-            project.setId(dto.id());
-        }
-        return project;
-    }
+	protected Project convertToEntity(ProjectDto dto) {
+		Project project = new Project(dto.getName(), dto.getDateCreated());
+		if (!Objects.isNull(dto.getId())) {
+			project.setId(dto.getId());
+		}
+		return project;
+	}
 }

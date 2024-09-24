@@ -94,7 +94,7 @@ public class AuthorizationServerIntegrationTest {
             .post(kcPostAuthenticationUrl);
         assertThat(HttpStatus.FOUND.value()).isEqualTo(response.getStatusCode());
 
-        String location = URLDecoder.decode(response.getHeader(HttpHeaders.LOCATION), Charset.forName("UTF-8"));
+        String location = URLDecoder.decode(response.getHeader(HttpHeaders.LOCATION));
         authSessionId = response.getCookie("JSESSIONID");
 
         // redirect to client url

@@ -6,10 +6,10 @@ import org.springframework.security.oauth2.config.annotation.web.configuration.E
 
 @SpringBootApplication
 @EnableAuthorizationServer
-public class LegacyJwkAuthServerApp {
+public class LegacyJwkAuthServerApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(LegacyJwkAuthServerApp.class, args);
+        SpringApplication.run(LegacyJwkAuthServerApplication.class, args);
     }
 
 }
