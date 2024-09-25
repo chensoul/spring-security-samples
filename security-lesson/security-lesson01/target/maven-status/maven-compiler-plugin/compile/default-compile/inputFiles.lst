@@ -1,0 +1,12 @@
+/Users/chensoul/codes/github/learn-spring-security/security-lesson/security-lesson01/src/main/java/com/chensoul/lss/web/validation/UsernameExistsException.java
+/Users/chensoul/codes/github/learn-spring-security/security-lesson/security-lesson01/src/main/java/com/chensoul/lss/persistence/UserRepository.java
+/Users/chensoul/codes/github/learn-spring-security/security-lesson/security-lesson01/src/main/java/com/chensoul/lss/web/controller/UserController.java
+/Users/chensoul/codes/github/learn-spring-security/security-lesson/security-lesson01/src/main/java/com/chensoul/lss/web/validation/PasswordMatchesValidator.java
+/Users/chensoul/codes/github/learn-spring-security/security-lesson/security-lesson01/src/main/java/com/chensoul/lss/web/validation/PasswordConstraintValidator.java
+/Users/chensoul/codes/github/learn-spring-security/security-lesson/security-lesson01/src/main/java/com/chensoul/lss/web/model/User.java
+/Users/chensoul/codes/github/learn-spring-security/security-lesson/security-lesson01/src/main/java/com/chensoul/lss/web/validation/PasswordConstraint.java
+/Users/chensoul/codes/github/learn-spring-security/security-lesson/security-lesson01/src/main/java/com/chensoul/lss/config/WebMvcConfiguration.java
+/Users/chensoul/codes/github/learn-spring-security/security-lesson/security-lesson01/src/main/java/com/chensoul/lss/service/UserService.java
+/Users/chensoul/codes/github/learn-spring-security/security-lesson/security-lesson01/src/main/java/com/chensoul/lss/SecurityLesson01Application.java
+/Users/chensoul/codes/github/learn-spring-security/security-lesson/security-lesson01/src/main/java/com/chensoul/lss/web/validation/PasswordMatches.java
+/Users/chensoul/codes/github/learn-spring-security/security-lesson/security-lesson01/src/main/java/com/chensoul/lss/service/UserServiceImpl.java

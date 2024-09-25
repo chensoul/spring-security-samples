@@ -24,26 +24,26 @@
 - lssc-lesson18：MFA
 
 - oauth2-legacy-lesson01
-  - ✅ spring-boot-sample-secure-oauth2-provider
-  - ✅ spring-boot-sample-secure-oauth2-resource
-  - ✅ spring-boot-sample-secure-oauth2-provider-authentication-manager
-  - ✅ spring-boot-sample-secure-oauth2-provider-jwt
-  - ✅ spring-boot-sample-secure-oauth2-resource-jwt
-  - ✅ spring-boot-sample-secure-oauth2-actuator
-  - ✅ spring-boot-sample-secure-oauth2
-  - ✅ spring-boot-sample-secure-github
+    - ✅ spring-boot-sample-secure-oauth2-provider
+    - ✅ spring-boot-sample-secure-oauth2-resource
+    - ✅ spring-boot-sample-secure-oauth2-provider-authentication-manager
+    - ✅ spring-boot-sample-secure-oauth2-provider-jwt
+    - ✅ spring-boot-sample-secure-oauth2-resource-jwt
+    - ✅ spring-boot-sample-secure-oauth2-actuator
+    - ✅ spring-boot-sample-secure-oauth2
+    - ✅ spring-boot-sample-secure-github
 - oauth2-legacy-lesson03
-  - ✅ legacy-jwk--auth-server
-  - ✅ legacy-jwk--resource-server
-  - ❌ legacy-jwk--client
-  - ✅ legacy-jwk-new--resource-server
-  - ✅ legacy-jwk-new--client
+    - ✅ legacy-jwk--auth-server
+    - ✅ legacy-jwk--resource-server
+    - ❌ legacy-jwk--client
+    - ✅ legacy-jwk-new--resource-server
+    - ✅ legacy-jwk-new--client
 - oauth2-legacy-lesson04
-  - ✅ legacy-jwt--auth-server
-  - ✅ legacy-jwt--resource-server
-  - ❌ legacy-jwt--client
-  - ✅ legacy-jwt-new--resource-server
-  - ✅ legacy-jwt-new--client
+    - ✅ legacy-jwt--auth-server
+    - ✅ legacy-jwt--resource-server
+    - ❌ legacy-jwt--client
+    - ✅ legacy-jwt-new--resource-server
+    - ✅ legacy-jwt-new--client
 
 ## 说明
 
@@ -59,7 +59,8 @@
 
 ### 生成证书
 
-JRE 提供了一个简单的证书管理工具——keytool。它位于您的JRE_HOME\bin目录下。以下代码中的命令生成一个自签名证书并将其放入 PKCS12 KeyStore 中。除了 KeyStore 的类型之外，您还需要设置其有效期、别名以及文件名。在开始生成过程之前，keytool会要求您输入密码和一些其他信息，如下所示：
+JRE 提供了一个简单的证书管理工具——keytool。它位于您的JRE_HOME\bin目录下。以下代码中的命令生成一个自签名证书并将其放入
+PKCS12 KeyStore 中。除了 KeyStore 的类型之外，您还需要设置其有效期、别名以及文件名。在开始生成过程之前，keytool会要求您输入密码和一些其他信息，如下所示：
 
 ```bash
 keytool -genkeypair -alias mytest -keyalg RSA -keysize 2048 \
@@ -68,12 +69,14 @@ keytool -genkeypair -alias mytest -keyalg RSA -keysize 2048 \
 ```
 
 导出公钥文件：
+
 ```bash
 keytool -list -rfc --keystore mytest.p12 -storepass mypass | \
     openssl x509 -inform pem -pubkey > public.key
 ```
 
 导出私钥文件：
+
 ```bash
 keytool -importkeystore -srckeystore mytest.p12 -srcstorepass mypass \
     -destkeystore private.p12 -deststoretype PKCS12 \

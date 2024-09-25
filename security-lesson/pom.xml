@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.7.18</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
+    <groupId>com.chensoul.lss</groupId>
+    <artifactId>security-lesson</artifactId>
+    <version>0.1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <properties>
+        <!-- non-dependencies -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <java.version>8</java.version>
+
+        <oauth-autoconfig.version>2.6.8</oauth-autoconfig.version>
+    </properties>
+
+    <modules>
+        <module>security-lesson01</module>
+        <module>security-lesson02</module>
+        <module>security-lesson03</module>
+        <module>security-lesson04</module>
+        <module>security-lesson05</module>
+        <module>security-lesson06</module>
+        <module>security-lesson07</module>
+        <module>security-lesson08</module>
+        <module>security-lesson09</module>
+        <module>security-lesson10</module>
+        <module>security-lesson11</module>
+        <module>security-lesson12</module>
+        <module>security-lesson13</module>
+        <module>security-lesson14</module>
+        <module>security-lesson15</module>
+        <module>security-lesson16</module>
+        <module>security-lesson17</module>
+        <module>security-lesson18</module>
+    </modules>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <excludes>
+                        <exclude>**/*LiveTest.java</exclude>
+                    </excludes>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
