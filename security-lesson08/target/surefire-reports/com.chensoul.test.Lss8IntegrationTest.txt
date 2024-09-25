@@ -1,8 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.chensoul.test.Lss8IntegrationTest
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec <<< FAILURE! - in com.chensoul.test.Lss8IntegrationTest
-com.chensoul.test.Lss8IntegrationTest.testUserLoginSuccess()  Time elapsed: 0.011 sec  <<< FAILURE!
-java.lang.NullPointerException: Cannot invoke "org.springframework.test.web.servlet.MockMvc.perform(org.springframework.test.web.servlet.RequestBuilder)" because "this.mockMvc" is null
-	at com.chensoul.test.Lss8IntegrationTest.testUserLoginSuccess(Lss8IntegrationTest.java:44)
-
