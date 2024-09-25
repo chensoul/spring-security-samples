@@ -1,0 +1,6 @@
+/Users/chensoul/codes/github/learn-spring-security/oauth2-legacy-lesson03/legacy-jwk--auth-server/src/main/java/com/chensoul/lss/web/controller/UserInfoController.java
+/Users/chensoul/codes/github/learn-spring-security/oauth2-legacy-lesson03/legacy-jwk--auth-server/src/main/java/com/chensoul/lss/spring/JwkKeyPairAccessTokenConverter.java
+/Users/chensoul/codes/github/learn-spring-security/oauth2-legacy-lesson03/legacy-jwk--auth-server/src/main/java/com/chensoul/lss/spring/JwkSetEndpoint.java
+/Users/chensoul/codes/github/learn-spring-security/oauth2-legacy-lesson03/legacy-jwk--auth-server/src/main/java/com/chensoul/lss/LegacyJwkAuthServerApp.java
+/Users/chensoul/codes/github/learn-spring-security/oauth2-legacy-lesson03/legacy-jwk--auth-server/src/main/java/com/chensoul/lss/spring/SecurityConfig.java
+/Users/chensoul/codes/github/learn-spring-security/oauth2-legacy-lesson03/legacy-jwk--auth-server/src/main/java/com/chensoul/lss/spring/ResourceServerConfig.java

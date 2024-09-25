@@ -27,7 +27,7 @@ public class AuthorizationServerIntegrationTest {
     private int serverPort;
 
     private static final String USERNAME = "user";
-    private static final String PASSWORD = "123";
+    private static final String PASSWORD = "pass";
 
     private static final String CLIENT_ID = "client";
     private static final String CLIENT_SECRET = "secret";

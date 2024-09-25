@@ -44,9 +44,9 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @AutoConfigureMockMvc
 public class OAuth2ProviderManagerApplicationTests {
 
-    private static final String CLIENT_ID = "ifusespasswordgranttype";
+    private static final String CLIENT_ID = "client";
 
-    private static final String CLIENT_SECRET = "thenneedsauthenticationmanager";
+    private static final String CLIENT_SECRET = "secret";
 
     private static final RequestPostProcessor CLIENT_CREDENTIALS = httpBasic(CLIENT_ID, CLIENT_SECRET);
 

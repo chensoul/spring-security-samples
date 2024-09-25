@@ -21,7 +21,7 @@ import io.restassured.response.Response;
 public class Oauth2ClientLiveTest {
 
     private static final String USERNAME = "user";
-    private static final String PASSWORD = "123";
+    private static final String PASSWORD = "pass";
     private static final String CLIENT_BASE_URL = "http://localhost:8082";
     private static final String AUTH_SERVER_BASE_URL = "http://localhost:8083";
     private static final String REDIRECT_URL = CLIENT_BASE_URL + "/lsso-client/login/oauth2/code/custom";

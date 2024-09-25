@@ -32,7 +32,7 @@ public class AuthenticationConfiguration {
 	UserDetailsService userDetailsService() {
 		// @formatter:off
 		return new InMemoryUserDetailsManager(
-				User.withDefaultPasswordEncoder().username("greg").password("turnquist").roles("read").build());
+				User.withDefaultPasswordEncoder().username("user").password("pass").roles("USER").build());
 		// @formatter:on
 	}
 

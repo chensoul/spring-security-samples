@@ -1,0 +1,5 @@
+/Users/chensoul/codes/github/learn-spring-security/security-lesson08/src/main/java/com/chensoul/lss/LssApp8.java
+/Users/chensoul/codes/github/learn-spring-security/security-lesson08/src/main/java/com/chensoul/lss/config/LssWebMvcConfiguration.java
+/Users/chensoul/codes/github/learn-spring-security/security-lesson08/src/main/java/com/chensoul/lss/security/LssUserDetailsService.java
+/Users/chensoul/codes/github/learn-spring-security/security-lesson08/src/main/java/com/chensoul/lss/security/MyUserDetails.java
+/Users/chensoul/codes/github/learn-spring-security/security-lesson08/src/main/java/com/chensoul/lss/config/LssSecurityConfig.java

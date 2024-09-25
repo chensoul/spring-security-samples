@@ -76,7 +76,7 @@ import org.springframework.web.bind.annotation.RestController;
  * Insufficient scope? (read not write) Ask for a new token!
  *
  * <pre>
- * curl localhost:8083/oauth/token -d "grant_type=password&scope=write&username=greg&password=turnquist" -u foo:bar
+ * curl localhost:8083/oauth/token -d "grant_type=password&scope=write&username=user&password=pass" -u client:secret
  *
  * {"access_token":"cfa69736-e2aa-4ae7-abbb-3085acda560e","token_type":"bearer","expires_in":43200,"scope":"write"}
  * </pre>
@@ -99,9 +99,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class OAuth2ClientApplication {
 
-	@GetMapping("/user")
-	public Principal user(Principal user) {
-		return user;
+	@GetMapping("/users/userinfo")
+	public Principal getUserInfo(Principal principal) {
+		return principal;
 	}
 
 	public static void main(String[] args) {

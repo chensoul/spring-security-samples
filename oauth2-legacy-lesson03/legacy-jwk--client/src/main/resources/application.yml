@@ -14,6 +14,8 @@ security:
       use-current-uri: false
     resource:
       token-info-uri: http://localhost:8083/oauth/check_token
+      # 使用 userinfo 或者 JWK 端点获取用户信息
+#      userInfoUri: http://localhost:8083/users/userinfo
       jwk:
         key-set-uri: http://localhost:8083/endpoint/jwks.json
 

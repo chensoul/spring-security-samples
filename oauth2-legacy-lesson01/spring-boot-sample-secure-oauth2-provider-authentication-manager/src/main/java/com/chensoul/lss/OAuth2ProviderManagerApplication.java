@@ -27,7 +27,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * After you launch the app, you can retrieve a bearer token like this:
  *
  * <pre>
- * curl client:secret@localhost:8083/oauth/token -dgrant_type=password -dusername=enduser -dpassword=password -dscope=read
+ * curl client:secret@localhost:8083/oauth/token -dgrant_type=password -dusername=user -dpassword=pass -dscope=read
  * </pre>
  *
  * The response should be similar to:

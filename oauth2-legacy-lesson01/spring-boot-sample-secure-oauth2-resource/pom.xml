@@ -23,7 +23,6 @@
         <oauth-autoconfig.version>2.6.8</oauth-autoconfig.version>
     </properties>
 
-
     <dependencies>
         <!-- web -->
         <dependency>

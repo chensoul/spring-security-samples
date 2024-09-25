@@ -42,7 +42,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
  * Series of automated integration tests to verify proper behavior of auto-configured,
  * OAuth2-secured system
  *
- * @author Greg Turnquist
+ * @author user pass
  * @author Rob Winch
  */
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
@@ -65,7 +65,7 @@ public class OAuth2ClientApplicationTests {
 //    @Test
     public void accessingRootUriPossibleWithUserAccount() throws Exception {
         MockHttpServletRequestBuilder request = get("/").accept(MediaTypes.HAL_JSON)
-                .with(httpBasic("greg", "turnquist"));
+                .with(httpBasic("user", "pass"));
         this.mvc.perform(request).andExpect(header().string("Content-Type", MediaTypes.HAL_JSON_VALUE))
                 .andExpect(status().isOk()).andDo(print());
     }
@@ -73,7 +73,7 @@ public class OAuth2ClientApplicationTests {
     @Test
     public void useAppSecretsPlusUserAccountToGetBearerToken() throws Exception {
         MockHttpServletRequestBuilder tokenRequest = post("/oauth/token").with(httpBasic("foo", "bar"))
-                .param("grant_type", "password").param("username", "greg").param("password", "turnquist")
+                .param("grant_type", "password").param("username", "user").param("password", "pass")
                 .param("scope", "read");
         MvcResult result = this.mvc.perform(tokenRequest).andExpect(status().isOk()).andReturn();
         Object accessToken = this.objectMapper.readValue(result.getResponse().getContentAsString(), Map.class)
@@ -91,7 +91,7 @@ public class OAuth2ClientApplicationTests {
         assertThat(flight.getDestination()).isEqualTo("Dallas");
         assertThat(flight.getAirline()).isEqualTo("Spring Ways");
         assertThat(flight.getFlightNumber()).isEqualTo("OAUTH2");
-        assertThat(flight.getTraveler()).isEqualTo("Greg Turnquist");
+        assertThat(flight.getTraveler()).isEqualTo("user pass");
     }
 
 }

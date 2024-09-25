@@ -3,6 +3,6 @@ server.port: 8081
 management.endpoints.web.exposure.include: "*"
 
 security.oauth2.resource.id: service
-security.oauth2.resource.userInfoUri: http://localhost:8083/user
+security.oauth2.resource.userInfoUri: http://localhost:8083/users/userinfo
 
 logging.level.org.springframework.security: DEBUG
