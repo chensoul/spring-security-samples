@@ -17,10 +17,6 @@
     <modules>
         <module>legacy-mini--auth-server</module>
         <module>legacy-mini--resource-server</module>
-        <module>legacy-jwk--client</module>
-
-        <module>legacy-jwk-new--resource-server</module>
-        <module>legacy-jwk-new--client</module>
     </modules>
 
 </project>

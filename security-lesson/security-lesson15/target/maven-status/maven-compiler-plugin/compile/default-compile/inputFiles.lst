@@ -1,7 +1,0 @@
-/Users/chensoul/codes/github/learn-spring-security/security-lesson/security-lesson15/src/main/java/com/chensoul/lss/security/LssLoggingFilter.java
-/Users/chensoul/codes/github/learn-spring-security/security-lesson/security-lesson15/src/main/java/com/chensoul/lss/config/WebMvcConfiguration.java
-/Users/chensoul/codes/github/learn-spring-security/security-lesson/security-lesson15/src/main/java/com/chensoul/lss/security/ActiveUserService.java
-/Users/chensoul/codes/github/learn-spring-security/security-lesson/security-lesson15/src/main/java/com/chensoul/lss/SecurityLesson15Application.java
-/Users/chensoul/codes/github/learn-spring-security/security-lesson/security-lesson15/src/main/java/com/chensoul/lss/security/LssUserDetailsService.java
-/Users/chensoul/codes/github/learn-spring-security/security-lesson/security-lesson15/src/main/java/com/chensoul/lss/web/controller/UserController.java
-/Users/chensoul/codes/github/learn-spring-security/security-lesson/security-lesson15/src/main/java/com/chensoul/lss/config/SecurityConfig.java
