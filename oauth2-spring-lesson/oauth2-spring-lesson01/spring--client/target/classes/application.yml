@@ -1,0 +1,37 @@
+server:
+  port: 8082
+  servlet:
+    context-path: /lsso-client
+
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          spring:
+            client-id: client
+            client-secret: secret
+            authorization-grant-type: authorization_code
+            redirect-uri: http://localhost:8082/lsso-client/login/oauth2/code/spring
+            scope: openid,read,write
+        provider:
+          spring:
+            #            issuer-uri: http://localhost:8083
+            authorization-uri: http://localhost:8083/oauth2/authorize
+            token-uri: http://localhost:8083/oauth2/token
+            user-info-uri: http://localhost:8083/userinfo
+            user-name-attribute: sub
+            jwk-set-uri: http://localhost:8083/oauth2/jwks
+      resource-server:
+        jwt:
+          issuer-uri: http://localhost:8080
+
+  thymeleaf:
+    cache: false
+
+logging.level.org.springframework.security: DEBUG
+
+resourceserver:
+  api:
+    project:
+      url: http://localhost:8081/resource/api/projects

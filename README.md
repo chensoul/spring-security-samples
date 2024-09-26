@@ -4,26 +4,27 @@
 
 ## 模块说明
 
-- lssc-lesson01: 一个 restful 应用
-- lssc-lesson02: 配置 inMemoryAuthentication
-- lssc-lesson03：配置受限的请求路径
-- lssc-lesson04：自定义登录页面
-- lssc-lesson05：自定义登出
-- lssc-lesson06：待定
-- lssc-lesson07：待定
-- lssc-lesson08：配置 UserDetailsService
-- lssc-lesson09：配置 rememberMe
-- lssc-lesson10：配置 rememberMe
-- lssc-lesson11：EL
-- lssc-lesson12：DaoAuthenticationProvider
-- lssc-lesson13：RunAsManager
-- lssc-lesson14：自定义 AuthenticationProvider
-- lssc-lesson15：session
-- lssc-lesson16：AccessDecisionManager
-- lssc-lesson17：MFA
-- lssc-lesson18：MFA
-
-- oauth2-legacy-lesson01
+- security-lesson:
+  - security-lesson01: 一个 restful 应用
+  - security-lesson02: 配置 inMemoryAuthentication
+  - security-lesson03：配置受限的请求路径
+  - security-lesson04：自定义登录
+  - security-lesson05：自定义登出
+  - security-lesson06：待定
+  - security-lesson07：待定
+  - security-lesson08：配置 UserDetailsService
+  - security-lesson09：配置 rememberMe
+  - security-lesson10：配置 rememberMe
+  - security-lesson11：EL
+  - security-lesson12：DaoAuthenticationProvider
+  - security-lesson13：RunAsManager
+  - security-lesson14：自定义 AuthenticationProvider
+  - security-lesson15：session
+  - security-lesson16：AccessDecisionManager
+  - security-lesson17：MFA
+  - security-lesson18：MFA
+- oauth2-legacy-lesson
+  - oauth2-legacy-lesson01
     - ✅ spring-boot-sample-secure-oauth2-provider
     - ✅ spring-boot-sample-secure-oauth2-resource
     - ✅ spring-boot-sample-secure-oauth2-provider-authentication-manager
@@ -32,13 +33,13 @@
     - ✅ spring-boot-sample-secure-oauth2-actuator
     - ✅ spring-boot-sample-secure-oauth2
     - ✅ spring-boot-sample-secure-github
-- oauth2-legacy-lesson03
+  - oauth2-legacy-lesson03
     - ✅ legacy-jwk--auth-server
     - ✅ legacy-jwk--resource-server
     - ❌ legacy-jwk--client
     - ✅ legacy-jwk-new--resource-server
     - ✅ legacy-jwk-new--client
-- oauth2-legacy-lesson04
+  - oauth2-legacy-lesson04
     - ✅ legacy-jwt--auth-server
     - ✅ legacy-jwt--resource-server
     - ❌ legacy-jwt--client

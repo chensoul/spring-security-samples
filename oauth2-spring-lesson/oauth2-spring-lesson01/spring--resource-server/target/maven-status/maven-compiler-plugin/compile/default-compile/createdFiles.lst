@@ -1,0 +1,8 @@
+com/chensoul/lss/persistence/repository/IProjectRepository.class
+com/chensoul/lss/service/impl/ProjectServiceImpl.class
+com/chensoul/lss/spring/ResourceSecurityConfig.class
+com/chensoul/lss/service/IProjectService.class
+com/chensoul/lss/SpringResourceServerApplication.class
+com/chensoul/lss/web/dto/ProjectDto.class
+com/chensoul/lss/web/controller/ProjectController.class
+com/chensoul/lss/persistence/model/Project.class

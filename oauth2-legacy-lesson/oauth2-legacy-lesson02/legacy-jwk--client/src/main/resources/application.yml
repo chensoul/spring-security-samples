@@ -1,0 +1,31 @@
+server:
+  port: 8082
+  servlet:
+    context-path: /lsso-client
+
+security:
+  oauth2:
+    client:
+      client-id: client
+      client-secret: secret
+      accessTokenUri: http://localhost:8083/oauth/access_token
+      userAuthorizationUri: http://localhost:8083/oauth/authorize
+      pre-established-redirect-uri: http://localhost:8082/lsso-client
+      use-current-uri: false
+    resource:
+      token-info-uri: http://localhost:8083/oauth/check_token
+      # 使用 userinfo 或者 JWK 端点获取用户信息
+      #      userInfoUri: http://localhost:8083/users/userinfo
+      jwk:
+        key-set-uri: http://localhost:8083/endpoint/jwks.json
+
+spring:
+  thymeleaf:
+    cache: false
+
+logging.level.org.springframework.security: DEBUG
+
+resourceserver:
+  api:
+    project:
+      url: http://localhost:8081/lsso-resource-server/api/projects

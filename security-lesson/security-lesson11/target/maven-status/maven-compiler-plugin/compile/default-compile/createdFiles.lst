@@ -1,0 +1,8 @@
+com/chensoul/lss/security/LssUserDetailsService.class
+com/chensoul/lss/config/MethodSecurityConfig.class
+com/chensoul/lss/config/SecurityConfig.class
+com/chensoul/lss/config/WebMvcConfiguration.class
+com/chensoul/lss/web/controller/SecuredController.class
+com/chensoul/lss/security/MySecurityExpressionRoot.class
+com/chensoul/lss/SecurityLesson11Application.class
+com/chensoul/lss/security/CustomMethodSecurityExpressionHandler.class

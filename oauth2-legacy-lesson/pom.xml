@@ -24,6 +24,7 @@
 
     <modules>
         <module>oauth2-legacy-lesson01</module>
+        <module>oauth2-legacy-lesson02</module>
         <module>oauth2-legacy-lesson03</module>
         <module>oauth2-legacy-lesson04</module>
     </modules>

@@ -1,0 +1,8 @@
+/Users/chensoul/codes/github/learn-spring-security/oauth2-legacy-lesson/oauth2-legacy-lesson04/legacy-jwt-new--resource-server/src/main/java/com/chensoul/lss/spring/ResourceSecurityConfig.java
+/Users/chensoul/codes/github/learn-spring-security/oauth2-legacy-lesson/oauth2-legacy-lesson04/legacy-jwt-new--resource-server/src/main/java/com/chensoul/lss/service/impl/ProjectServiceImpl.java
+/Users/chensoul/codes/github/learn-spring-security/oauth2-legacy-lesson/oauth2-legacy-lesson04/legacy-jwt-new--resource-server/src/main/java/com/chensoul/lss/web/dto/ProjectDto.java
+/Users/chensoul/codes/github/learn-spring-security/oauth2-legacy-lesson/oauth2-legacy-lesson04/legacy-jwt-new--resource-server/src/main/java/com/chensoul/lss/persistence/repository/ProjectRepository.java
+/Users/chensoul/codes/github/learn-spring-security/oauth2-legacy-lesson/oauth2-legacy-lesson04/legacy-jwt-new--resource-server/src/main/java/com/chensoul/lss/web/controller/ProjectController.java
+/Users/chensoul/codes/github/learn-spring-security/oauth2-legacy-lesson/oauth2-legacy-lesson04/legacy-jwt-new--resource-server/src/main/java/com/chensoul/lss/persistence/model/Project.java
+/Users/chensoul/codes/github/learn-spring-security/oauth2-legacy-lesson/oauth2-legacy-lesson04/legacy-jwt-new--resource-server/src/main/java/com/chensoul/lss/service/ProjectService.java
+/Users/chensoul/codes/github/learn-spring-security/oauth2-legacy-lesson/oauth2-legacy-lesson04/legacy-jwt-new--resource-server/src/main/java/com/chensoul/lss/LegacyJwtNewResourceServerApplication.java
