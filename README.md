@@ -4,61 +4,26 @@
 
 ## 模块说明
 
-- security-lesson:
-  - security-lesson01: 一个 restful 应用
-  - security-lesson02: 配置 inMemoryAuthentication
-  - security-lesson03：配置受限的请求路径
-  - security-lesson04：自定义登录
-  - security-lesson05：自定义登出
-  - security-lesson06：待定
-  - security-lesson07：待定
-  - security-lesson08：配置 UserDetailsService
-  - security-lesson09：配置 rememberMe
-  - security-lesson10：配置 rememberMe
-  - security-lesson11：EL
-  - security-lesson12：DaoAuthenticationProvider
-  - security-lesson13：RunAsManager
-  - security-lesson14：自定义 AuthenticationProvider
-  - security-lesson15：session
-  - security-lesson16：AccessDecisionManager
-  - security-lesson17：MFA
-  - security-lesson18：MFA
-- oauth2-legacy-lesson
-  - oauth2-legacy-lesson01
-    - ✅ spring-boot-sample-secure-oauth2-provider
-    - ✅ spring-boot-sample-secure-oauth2-resource
-    - ✅ spring-boot-sample-secure-oauth2-provider-authentication-manager
-    - ✅ spring-boot-sample-secure-oauth2-provider-jwt
-    - ✅ spring-boot-sample-secure-oauth2-resource-jwt
-    - ✅ spring-boot-sample-secure-oauth2-actuator
-    - ✅ spring-boot-sample-secure-oauth2
-    - ✅ spring-boot-sample-secure-github
-  - oauth2-legacy-lesson03
-    - ✅ legacy-jwk--auth-server
-    - ✅ legacy-jwk--resource-server
-    - ❌ legacy-jwk--client
-    - ✅ legacy-jwk-new--resource-server
-    - ✅ legacy-jwk-new--client
-  - oauth2-legacy-lesson04
-    - ✅ legacy-jwt--auth-server
-    - ✅ legacy-jwt--resource-server
-    - ❌ legacy-jwt--client
-    - ✅ legacy-jwt-new--resource-server
-    - ✅ legacy-jwt-new--client
+- security-lesson01: 一个 restful 应用
+- security-lesson02: 配置 inMemoryAuthentication
+- security-lesson03：配置受限的请求路径
+- security-lesson04：自定义登录
+- security-lesson05：自定义登出
+- security-lesson06：待定
+- security-lesson07：待定
+- security-lesson08：配置 UserDetailsService
+- security-lesson09：配置 rememberMe
+- security-lesson10：配置 rememberMe
+- security-lesson11：EL
+- security-lesson12：DaoAuthenticationProvider
+- security-lesson13：RunAsManager
+- security-lesson14：自定义 AuthenticationProvider
+- security-lesson15：session
+- security-lesson16：AccessDecisionManager
+- security-lesson17：MFA
+- security-lesson18：MFA
 
-## 说明
-
-### spring-security-oauth2-autoconfigure
-
-### spring-boot-starter-oauth2-authorization-server
-
-### spring-boot-starter-oauth2-resource-server
-
-### spring-boot-starter-oauth2-client
-
-## 附录
-
-### 生成证书
+## 生成证书
 
 JRE 提供了一个简单的证书管理工具——keytool。它位于您的JRE_HOME\bin目录下。以下代码中的命令生成一个自签名证书并将其放入
 PKCS12 KeyStore 中。除了 KeyStore 的类型之外，您还需要设置其有效期、别名以及文件名。在开始生成过程之前，keytool会要求您输入密码和一些其他信息，如下所示：

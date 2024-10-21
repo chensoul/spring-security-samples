@@ -1,0 +1,10 @@
+server.port: 8081
+
+server.tomcat.accesslog.enabled: true
+server.tomcat.basedir: logs/tomcat
+
+spring.jpa.properties.jakarta.persistence.validation.mode: none
+
+spring:
+  jpa:
+    show-sql: true

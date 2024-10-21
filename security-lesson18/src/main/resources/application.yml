@@ -1,0 +1,14 @@
+server.port: 8081
+
+server.tomcat.accesslog.enabled: true
+server.tomcat.basedir: logs/tomcat
+
+spring.jpa.properties.jakarta.persistence.validation.mode: none
+
+spring.jpa.hibernate.ddl-auto: update
+
+
+#twilio - update these credentials
+twilio.sid: AC00000000000000000000000000000000
+twilio.token: 00000000000000000000000000000000
+twilio.sender: 11111111111
