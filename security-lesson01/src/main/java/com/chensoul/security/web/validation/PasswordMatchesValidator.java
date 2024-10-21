@@ -1,8 +1,8 @@
 package com.chensoul.security.web.validation;
 
 import com.chensoul.security.web.model.User;
-import jakarta.validation.ConstraintValidator;
-import jakarta.validation.ConstraintValidatorContext;
+import javax.validation.ConstraintValidator;
+import javax.validation.ConstraintValidatorContext;
 
 public class PasswordMatchesValidator implements ConstraintValidator<PasswordMatches, Object> {
 

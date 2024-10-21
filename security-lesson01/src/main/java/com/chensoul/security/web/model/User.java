@@ -2,12 +2,12 @@ package com.chensoul.security.web.model;
 
 import com.chensoul.security.web.validation.PasswordConstraint;
 import com.chensoul.security.web.validation.PasswordMatches;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Transient;
-import jakarta.validation.constraints.NotEmpty;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Transient;
+import javax.validation.constraints.NotEmpty;
 import java.util.Calendar;
 import lombok.Data;
 import org.jboss.aerogear.security.otp.api.Base32;

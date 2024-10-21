@@ -1,8 +1,8 @@
 package com.chensoul.security.web.validation;
 
 import java.util.Arrays;
-import jakarta.validation.ConstraintValidator;
-import jakarta.validation.ConstraintValidatorContext;
+import javax.validation.ConstraintValidator;
+import javax.validation.ConstraintValidatorContext;
 import org.passay.DigitCharacterRule;
 import org.passay.LengthRule;
 import org.passay.PasswordData;

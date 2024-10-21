@@ -4,7 +4,7 @@ import com.chensoul.security.persistence.UserRepository;
 import com.chensoul.security.service.UserService;
 import com.chensoul.security.web.model.User;
 import com.chensoul.security.web.validation.UsernameExistsException;
-import jakarta.validation.Valid;
+import javax.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;

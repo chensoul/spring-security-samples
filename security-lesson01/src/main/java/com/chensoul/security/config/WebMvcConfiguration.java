@@ -2,7 +2,7 @@ package com.chensoul.security.config;
 
 import com.chensoul.security.service.UserService;
 import com.chensoul.security.web.model.User;
-import jakarta.annotation.PostConstruct;
+import javax.annotation.PostConstruct;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

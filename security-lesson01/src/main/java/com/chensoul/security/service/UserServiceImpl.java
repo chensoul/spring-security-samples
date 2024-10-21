@@ -3,7 +3,7 @@ package com.chensoul.security.service;
 import com.chensoul.security.persistence.UserRepository;
 import com.chensoul.security.web.model.User;
 import com.chensoul.security.web.validation.UsernameExistsException;
-import jakarta.transaction.Transactional;
+import javax.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
