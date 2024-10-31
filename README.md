@@ -73,6 +73,15 @@ openssl pkcs12 -in private.p12 -nodes -nocerts -out private.key
 - https://github.com/eugenp/learn-spring-security/tree/lsso-module5/logout-with-oauth-and-oidc-end
 - https://github.com/OpenDocCN/freelearn-javaweb-zh/blob/f12853ff9d621f45414c5f67af4c8d1d04484f1a/docs/ms-sprcld/ms-sprcld_12.md
 
+- https://coursehunters.online/t/learn-spring-security-oauth-the-master-class-part-1
+- https://coursehunters.online/t/learn-spring-security-oauth-the-master-class-part-2
+- https://coursehunters.online/t/learn-spring-security-oauth-the-master-class-part-3
+- https://coursehunters.online/t/learn-spring-security-oauth-the-master-class-part-4
+- https://coursehunters.online/t/learn-spring-security-oauth-the-certification-class-part-1
+- https://coursehunters.online/t/learn-spring-security-oauth-the-certification-class-part-2
+- https://coursehunters.online/t/learn-spring-security-oauth-the-certification-class-part-3
+- https://coursehunters.online/t/learn-spring-security-oauth-the-certification-class-part-4
+  
 ## 贡献
 
 非常欢迎[提出请求](https://help.github.com/articles/creating-a-pull-request) 。
