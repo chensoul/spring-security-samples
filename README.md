@@ -3,7 +3,7 @@
 # <font size="6p">spring-security-5-samples</font> <font size="5p">  | [English](README.md)</font>
 
 <p align="left">
- <a href="https://github.com/chensoul/spring-boot-samples/workflows/maven-build.yml"><img src="https://github.com/chensoul/spring-boot-samples/actions/workflows/maven-build.yml/badge.svg"></a>
+ <a href="https://github.com/chensoul/spring-security-5-samples/workflows/maven-build.yml"><img src="https://github.com/chensoul/spring-security-5-samples/actions/workflows/maven-build.yml/badge.svg"></a>
  <a href="/pom.xml"><img src="https://img.shields.io/badge/Spring%20Boot%20Version-2.7.18-blue"></a>
  <a href="/pom.xml"><img src="https://img.shields.io/badge/Java%20Version-8-blue"></a>
 	<a href="https://github.com/chensoul/spring-security-5-samples/network/members"><img src="https://img.shields.io/github/forks/chensoul/spring-security-5-samples?style=flat-square&logo=GitHub"></a>
