@@ -1,6 +1,6 @@
 ![video_spider](https://socialify.git.ci/chensoul/spring-security-5-samples/image?forks=1&issues=1&language=1&name=1&owner=1&stargazers=1&theme=Light)
 
-# <font size="6p">spring-security-5-samples</font> <font size="5p">  | [English Documentation](README.md)</font>
+# <font size="6p">spring-security-5-samples</font> <font size="5p">  | [English](README.md)</font>
 
 <p align="left">
 	<a href="/pom.xml"><img src="https://img.shields.io/badge/Spring%20Boot%20Version-2.7.18-blue"></a>
@@ -11,7 +11,7 @@
 	<a href="https://github.com/chensoul/spring-security-5-samples/blob/main/LICENSE"><img src="https://img.shields.io/github/license/chensoul/spring-security-5-samples.svg?style=flat-square"></a>
 </p>
 
-基于 Maven 构建的 Spring Security 示例。
+基于 Maven 构建的 Spring Security 5 示例。
 
 ## 如何运行
 
