@@ -1,39 +1,17 @@
-![video_spider](https://socialify.git.ci/chensoul/learn-spring-security/image?forks=1&issues=1&language=1&name=1&owner=1&stargazers=1&theme=Light)
+![video_spider](https://socialify.git.ci/chensoul/spring-security-5-samples/image?forks=1&issues=1&language=1&name=1&owner=1&stargazers=1&theme=Light)
 
-# <font size="6p">learn-spring-security</font> <font size="5p">  | [English Documentation](README.md)</font>
+# <font size="6p">spring-security-5-samples</font> <font size="5p">  | [English Documentation](README.md)</font>
 
 <p align="left">
-	<a href="https://github.com/chensoul/learn-spring-security/stargazers"><img src="https://img.shields.io/github/stars/chensoul/learn-spring-security?style=flat-square&logo=GitHub"></a>
-	<a href="https://github.com/chensoul/learn-spring-security/network/members"><img src="https://img.shields.io/github/forks/chensoul/learn-spring-security?style=flat-square&logo=GitHub"></a>
-	<a href="https://github.com/chensoul/learn-spring-security/watchers"><img src="https://img.shields.io/github/watchers/chensoul/learn-spring-security?style=flat-square&logo=GitHub"></a>
-	<a href="https://github.com/chensoul/learn-spring-security/issues"><img src="https://img.shields.io/github/issues/chensoul/learn-spring-security.svg?style=flat-square&logo=GitHub"></a>
-	<a href="https://github.com/chensoul/learn-spring-security/blob/main/LICENSE"><img src="https://img.shields.io/github/license/chensoul/learn-spring-security.svg?style=flat-square"></a>
+	<a href="/pom.xml"><img src="https://img.shields.io/badge/Spring%20Boot%20Version-2.7.18-blue"></a>
+<a href="/pom.xml"><img src="https://img.shields.io/badge/Java%20Version-8-blue"></a>
+	<a href="https://github.com/chensoul/spring-security-5-samples/network/members"><img src="https://img.shields.io/github/forks/chensoul/spring-security-5-samples?style=flat-square&logo=GitHub"></a>
+	<a href="https://github.com/chensoul/spring-security-5-samples/watchers"><img src="https://img.shields.io/github/watchers/chensoul/spring-security-5-samples?style=flat-square&logo=GitHub"></a>
+	<a href="https://github.com/chensoul/spring-security-5-samples/issues"><img src="https://img.shields.io/github/issues/chensoul/spring-security-5-samples.svg?style=flat-square&logo=GitHub"></a>
+	<a href="https://github.com/chensoul/spring-security-5-samples/blob/main/LICENSE"><img src="https://img.shields.io/github/license/chensoul/spring-security-5-samples.svg?style=flat-square"></a>
 </p>
 
 基于 Maven 构建的 Spring Security 示例。
-
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/chensoul/learn-spring-security)
-
-## 模块说明
-
-- security-lesson01: 一个 restful 应用
-- security-lesson02: 配置 inMemoryAuthentication
-- security-lesson03：配置受限的请求路径
-- security-lesson04：自定义登录
-- security-lesson05：自定义登出
-- security-lesson06：待定
-- security-lesson07：待定
-- security-lesson08：配置 UserDetailsService
-- security-lesson09：配置 rememberMe
-- security-lesson10：配置 rememberMe
-- security-lesson11：EL
-- security-lesson12：DaoAuthenticationProvider
-- security-lesson13：RunAsManager
-- security-lesson14：自定义 AuthenticationProvider
-- security-lesson15：session
-- security-lesson16：AccessDecisionManager
-- security-lesson17：MFA
-- security-lesson18：MFA
 
 ## 如何运行
 
@@ -81,7 +59,7 @@ openssl pkcs12 -in private.p12 -nodes -nocerts -out private.key
 - https://coursehunters.online/t/learn-spring-security-oauth-the-certification-class-part-2
 - https://coursehunters.online/t/learn-spring-security-oauth-the-certification-class-part-3
 - https://coursehunters.online/t/learn-spring-security-oauth-the-certification-class-part-4
-  
+
 ## 贡献
 
 非常欢迎[提出请求](https://help.github.com/articles/creating-a-pull-request) 。

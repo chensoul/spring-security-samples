@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.chensoul.security</groupId>
-  <artifactId>spring-security-samples</artifactId>
+  <artifactId>spring-security-5-samples</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
 
-  <name>spring-security-samples</name>
+  <name>spring-security-5-samples</name>
 
   <modules>
     <module>spring-security-user</module>
@@ -27,7 +27,6 @@
     <module>spring-security-14-accessDecisionManager</module>
     <module>spring-security-15-mfa</module>
     <module>spring-security-16-mfa-totp</module>
-    <!--    <module>spring-security-17-ott</module>-->
     <module>spring-security-17-userDetailsPasswordService</module>
   </modules>
 </project>
