@@ -1,0 +1,3 @@
+spring.jpa.properties.javax.persistence.validation.mode: none
+
+spring.jpa.hibernate.ddl-auto: update

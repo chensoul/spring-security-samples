@@ -1,46 +1,33 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-    <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.7.18</version>
-        <relativePath/> <!-- lookup parent from repository -->
-    </parent>
+  <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.chensoul.security</groupId>
-    <artifactId>learn-spring-security</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <packaging>pom</packaging>
+  <groupId>com.chensoul.security</groupId>
+  <artifactId>spring-security-samples</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
 
-    <name>learn-spring-security</name>
+  <name>spring-security-samples</name>
 
-    <scm>
-        <!-- 使用 https：因为 publish-scm 插件-->
-        <url>https://github.com/chensoul/learn-spring-security.git</url>
-        <connection>scm:git:${project.scm.url}</connection>
-        <developerConnection>scm:git:${project.scm.url}</developerConnection>
-        <tag>HEAD</tag>
-    </scm>
-
-    <modules>
-        <module>security-lesson01</module>
-        <module>security-lesson02</module>
-        <module>security-lesson03</module>
-        <module>security-lesson04</module>
-        <module>security-lesson05</module>
-        <module>security-lesson06</module>
-        <module>security-lesson07</module>
-        <module>security-lesson08</module>
-        <module>security-lesson09</module>
-        <module>security-lesson10</module>
-        <module>security-lesson11</module>
-        <module>security-lesson12</module>
-        <module>security-lesson13</module>
-        <module>security-lesson14</module>
-        <module>security-lesson15</module>
-        <module>security-lesson16</module>
-        <module>security-lesson17</module>
-        <module>security-lesson18</module>
-    </modules>
+  <modules>
+    <module>spring-security-user</module>
+    <module>spring-security-01-default</module>
+    <module>spring-security-02-inMemoryAuthentication</module>
+    <module>spring-security-03-httpSecurity</module>
+    <module>spring-security-04-login</module>
+    <module>spring-security-05-logout</module>
+    <module>spring-security-06-userDetailsService</module>
+    <module>spring-security-07-remember-me</module>
+    <module>spring-security-08-remember-m</module>
+    <module>spring-security-09-el</module>
+    <module>spring-security-10-daoAuthenticationProvider</module>
+    <module>spring-security-11-runAsManager</module>
+    <module>spring-security-12-custom-daoAuthenticationProvider</module>
+    <module>spring-security-13-session</module>
+    <module>spring-security-14-accessDecisionManager</module>
+    <module>spring-security-15-mfa</module>
+    <module>spring-security-16-mfa-totp</module>
+    <!--    <module>spring-security-17-ott</module>-->
+    <module>spring-security-17-userDetailsPasswordService</module>
+  </modules>
 </project>
